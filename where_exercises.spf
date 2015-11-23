@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>colorIndex</key>
+			<integer>0</integer>
+			<key>database</key>
+			<string>employees</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>kcid</key>
+			<string>3603416776133697148</string>
+			<key>name</key>
+			<string>Vagrant Codeup MySQL</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>ssh_host</key>
+			<string>192.168.77.77</string>
+			<key>ssh_keyLocation</key>
+			<string></string>
+			<key>ssh_keyLocationEnabled</key>
+			<integer>0</integer>
+			<key>ssh_user</key>
+			<string>vagrant</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSSHTunnelConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>codeup</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClZlbXBfbm/SHh8tLl8Q
+			D05TTXV0YWJsZVN0cmluZ6MtLyNYTlNTdHJpbmfSHh8xMl5OU011
+			dGFibGVBcnJheaMxMyNXTlNBcnJhedIeHyI1oiIjXxAPTlNLZXll
+			ZEFyY2hpdmVy0Tg5VGRhdGGAAQAIABEAGgAjAC0AMgA3AEUASwBS
+			AFoAZQBsAHAAcgB0AHYAegB8AH4AgACCAIcAjACRALoAwQDCAMMA
+			xQDKANUA3gD0APgBBQEOARMBFQEXARkBHgEoASoBMQE2AUgBTAFV
+			AVoBaQFtAXUBegF9AY8BkgGXAAAAAAAAAgEAAAAAAAAAOgAAAAAA
+			AAAAAAAAAAAAAZk=
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {951, 578}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>SELECT * FROM departments;
+SELECT DISTINCT first_name
+FROM employees
+WHERE first_name LIKE '%sus%';
+SELECT emp_no, first_name, last_name
+FROM employees
+WHERE emp_no BETWEEN 10026 AND 10082;
+SELECT emp_no, first_name, last_name
+FROM employees
+WHERE last_name IN ('Herber', 'Dredge', 'Lipner', 'Baek');
+
+SELECT emp_no, first_name, last_name
+FROM employees
+WHERE last_name = 'Baek';
+
+SELECT emp_no, first_name, last_name
+FROM employees
+WHERE emp_no &lt; 10026;
+
+SELECT emp_no, first_name, last_name
+FROM employees
+WHERE emp_no &lt;= 10026;
+
+SELECT emp_no, title
+FROM titles
+WHERE to_date IS UNKNOWN;
+
+SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY last_name ASC, first_name ASC; 
+
+
+SELECT emp_no, first_name, last_name
+FROM employees
+WHERE last_name LIKE '%E' 
+OR last_name LIKE 'E%'
+ORDER BY emp_no DESC;
+
+SELECT first_name, last_name
+FROM employees
+WHERE last_name LIKE '%E' 
+AND last_name LIKE 'E%';
+
+SELECT * FROM employees WHERE birth_date LIKE '%-12-25' AND  
+(
+	hire_date BETWEEN '1990-01-01' AND '1999-12-31'
+)
+ORDER BY birth_date DESC;
+
+SELECT first_name, last_name
+FROM employees
+WHERE last_name LIKE '%q%'
+AND last_name NOT LIKE '%qu%';</string>
+			<key>table</key>
+			<string>employees</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>202</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>SELECT * FROM employees WHERE birth_date LIKE '%-12-25' AND  
+(
+	hire_date BETWEEN '1990-01-01' AND '1999-12-31'
+)
+ORDER BY birth_date DESC</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE last_name LIKE '%E' 
+OR last_name LIKE 'E%'
+ORDER BY emp_no DESC</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE last_name LIKE '%E' 
+OR last_name LIKE 'E%'
+ORDER BY emp_no</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY last_name ASC, first_name ASC</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name ASC, last_name ASC</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY last_name</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name ASC</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY last_name ASC</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY last_name DESC</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name DESC</string>
+		<string>SELECT emp_no, first_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name DESC</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name LIKE 'Irena', 'Vidya', 'Maya'
+ORDER BY last_name</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name = 'Irena', 'Vidya', 'Maya'
+ORDER BY last_name</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name = 'Irena', 'Vidya', 'Maya'
+ORDER BY first_name</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+ORDER BY first_name = 'Irena', 'Vidya', 'Maya'</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+ORDER BY first_name = ('Irena', 'Vidya', 'Maya')</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE gender = 'M'
+AND (
+	first_name = 'Irena'
+	 OR first_name = 'Vidya'
+	OR first_name = 'Maya'
+)</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE gender = 'M'
+AND (
+	first_name = 'Irena'
+	first_name = 'Vidya'
+	OR first_name = 'Maya'
+)</string>
+		<string>SELECT emp_no, first_name, last_name
+FROM employees
+WHERE gender = 'M'
+AND (
+	first_name = 'Irena'
+	first_name = 'Vidya')
+	OR first_name = 'Maya'
+)</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.44-0ubuntu0.14.04.1-log</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

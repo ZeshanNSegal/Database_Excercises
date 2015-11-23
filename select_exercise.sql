@@ -1,5 +1,5 @@
 USE codeup_test_db;
--- ? mj not showing up?
+
 SELECT name AS 'The Name of MJ''s Album is:'
 FROM albums 
 WHERE name = 'Thriller'; 
