@@ -1,21 +1,29 @@
 USE codeup_test_db;
-SELECT 'Thriller' AS 'The Name of MJ''s Album is:';
-SELECT * FROM albums WHERE artist = 'Michael Jackson'; 
+-- ? mj not showing up?
+SELECT name AS 'The Name of MJ''s Album is:'
+FROM albums 
+WHERE name = 'Thriller'; 
 
-SELECT '1978' AS 'The Year Grease was released was:';
-SELECT * FROM albums WHERE release_date = '1978'; 
+SELECT release_date AS 'The Year Grease was released was:'
+FROM albums 
+WHERE name = 'Grease: The Original Soundtrack from the Motion Picture'; 
 
-SELECT 'The Best Ever(rock)' AS 'The Genre of Queen''s Album is:'  ;
-SELECT * FROM albums WHERE genre = 'The Best Ever(rock)';
+SELECT genre AS 'The Genre of Queen''s Album is:'  
+FROM albums 
+WHERE artist = 'Queen';
 
-SELECT '34 million' AS 'Legend sold:';
-SELECT * FROM albums WHERE sales = '34';
+SELECT sales AS 'Legend sold:'
+FROM albums 
+WHERE artist = 'Bob Marley & the Wailers';
 
-SELECT 'Rock Genre' AS 'Albums in the:';
-SELECT * FROM albums WHERE genre = 'Rock';
+SELECT artist AS 'Albums in the Rock Genre are:'
+FROM albums 
+WHERE genre LIKE '%rock%';
 
-SELECT '80''s Albums' AS 'These are 80''s:';
-SELECT * FROM albums WHERE release_date BETWEEN '1980' AND '1989';
+SELECT name AS 'These are 80''s albums:'
+FROM albums 
+WHERE release_date BETWEEN '1980' AND '1989';
+
 
 
 
